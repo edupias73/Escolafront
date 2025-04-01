@@ -4,10 +4,34 @@
 <br>
         <div class="card">
             <div class="card-body">
-                catatau
+              <table  border="1" class="table table-striped ">
+                
+                <thead>
+                  <tr>
+                    <th> id </th>
+                    <th> nome </th>
+                    <th> cpf </th>
+                    <th> telefone </th>
+                    <th> turma </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  
+              @for (aluno of lista; track $index) {
+                  <tr> 
+                    <td> {{aluno.id}}</td>
+                    <td> {{aluno.nome}}</td>
+                    <td> {{aluno.cpf}}</td>
+                    <td> {{aluno.telefone}} </td>
+                    <td> {{aluno.turma}} </td>
+                  </tr>
+                }
+                </tbody>
+
+              </table>
             </div>
         </div>          
-
 
       </div>
     </div>

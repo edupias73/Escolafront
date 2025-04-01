@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Aluno } from '../../../models/aluno';
 
 @Component({
   selector: 'app-aluno-list',
@@ -9,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class AlunoListComponent {
 
+  lista:Aluno [] = [];
+
+  constructor(){
+    this.lista.push(new Aluno(1,'joao','126122','459978','2b'));
+    this.lista.push(new Aluno(1,'joao','126122','459978','2b'));
+    this.lista.push(new Aluno(1,'joao','126122','459978','2b'));
+    this.lista.push(new Aluno(1,'joao','126122','459978','2b'));
+  }
 }
